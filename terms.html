@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Terms and Conditions</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript for handling the search functionality
+        document.getElementById("search-button").addEventListener("click", function () {
+            const searchInput = document.getElementById("search-input").value;
+            const searchResults = document.getElementById("search-results");
+
+            // You can perform a search operation here and display the results in the "search-results" div.
+            // For this example, let's just display a message.
+            searchResults.innerHTML = `<p>Search results for: ${searchInput}</p>`;
+        });
+    </script>
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">CarsPursuit</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CarsPursuit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="form.html">Contact Us</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="blog.html">Some information on cars</a></li>
+                                <li><a class="dropdown-item" href="sellcar.html">Sell Cars to us</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <!-- <li><a class="dropdown-item" href="#">Contact Us</a></li> -->
+                                <li><a class="dropdown-item" href="terms.html">Terms and Conditions</a></li>
+                                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex mt-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <h1>Terms and Conditions</h1>
+        <p>Last updated: [04/11/2023]</p>
+
+        <h2>1. Acceptance of Terms</h2>
+        <p>By accessing and using this website, you agree to be bound by these Terms and Conditions, all applicable
+            laws, and regulations, and agree that you are responsible for compliance with any applicable local laws.</p>
+
+        <h2>2. Website Use</h2>
+        <p>You must use this website in accordance with all applicable laws and regulations. You may not engage in any
+            illegal or unauthorized activities on the website.</p>
+
+        <h2>3. Intellectual Property</h2>
+        <p>All content and materials on this website are the intellectual property of [Your Company Name] and are
+            protected by copyright and trademark laws. You may not use, reproduce, or distribute these materials without
+            our prior written consent.</p>
+
+        <h2>4. Warranty and Disclaimer</h2>
+        <p>This website is provided "as is" without any warranties, expressed or implied. [Your Company Name] does not
+            guarantee the accuracy, completeness, or reliability of the information provided on this website.</p>
+
+        <h2>5. Privacy Policy</h2>
+        <p>Your use of this website is also governed by our Privacy Policy, which can be found on a separate page.</p>
+
+        <h2>6. Limitation of Liability</h2>
+        <p>[Your Company Name] shall not be liable for any direct, indirect, incidental, special, or consequential
+            damages resulting from your use of the website.</p>
+
+        <h2>7. Governing Law</h2>
+        <p>These Terms and Conditions are governed by and construed in accordance with the laws of [Your Jurisdiction].
+            Any disputes related to these terms will be resolved in the courts of [Your Jurisdiction].</p>
+
+        <h2>8. Changes to Terms</h2>
+        <p>[Your Company Name] reserves the right to modify or revise these Terms and Conditions at any time. It is your
+            responsibility to review these terms periodically to stay informed of any changes.</p>
+
+        <h2>9. Contact Information</h2>
+        <p>If you have any questions or concerns regarding these Terms and Conditions, you may contact us at [Your
+            Contact Information].</p>
+    </div>
+    <footer class="bg-dark text-light p-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>About Us</h4>
+                    <p>"Carpursuit is your ultimate destination for the world of automotive excellence. As a leading car
+                        manufacturing website, we are committed to delivering a comprehensive and immersive experience
+                        for all car enthusiasts. Whether you're a passionate car aficionado, a potential buyer, or
+                        someone seeking the latest automotive innovations, Carpursuit has you covered.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Connect with Us</h4>
+                    <ul class="list-unstyled">
+                        <li><a href="https://www.facebook.com/profile.php?id=100090940032956" class="text-light"
+                                target="_blank">Facebook</a></li>
+                        <li><a href="https://twitter.com/ahadabdul9976" target="_blank" class="text-light">Twitter</a>
+                        </li>
+                        <li><a href="https://www.instagram.com/__abdulahad._/" target="_blank"
+                                class="text-light">Instagram</a></li>
+                        <li><a href="https://www.linkedin.com/in/abdul-ahad-6954b0266/" target="_blank"
+                                class="text-light">LinkedIn</a></li>
+                        <li><a href="https://abdulahad0007.github.io/carpursuit.com/" class="text-light" target="_blank">Github</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Location</h4>
+                    <div id="map" style="height: 150px;">
+                        <div class="mapouter">
+                            <div class="gmap_canvas"><iframe width="300" height="186" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=rafikabad+colony+dasna+gha&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                    href="https://online.stopwatch-timer.net/">timer stopwatch</a><br><a
+                                    href="https://www.tabclocktab.com/"></a><br>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: right;
+                                        height: 186px;
+                                        width: 300px;
+                                    }
+                                </style><a href="https://www.ongooglemaps.com">insert google map html</a>
+                                <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 186px;
+                                        width: 300px;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="bg-dark text-light text-center py-3">
+        &copy; 2023 Car Pursuit | All rights Reserved
+    </footer>
+    <!-- Add Bootstrap JavaScript (optional) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // JavaScript for handling the search functionality
+    document.getElementById("search-button").addEventListener("click", function () {
+      const searchInput = document.getElementById("search-input").value;
+      const searchResults = document.getElementById("search-results");
+
+      // You can perform a search operation here and display the results in the "search-results" div.
+      // For this example, let's just display a message.
+      searchResults.innerHTML = `<p>Search results for: ${searchInput}</p>`;
+    });
+  </script>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .card-text {
+      font-size: 18px;
+    }
+
+    .speaker-button {
+      cursor: pointer;
+      font-size: 24px;
+    }
+  </style>
+  <title>Cars Information</title>
+</head>
+
+<body>
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">CarsPursuit</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">CarsPursuit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form.html">Contact Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="blog.html">Some information on cars</a></li>
+                <li><a class="dropdown-item" href="sellcar.html">Sell Cars to us</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <!-- <li><a class="dropdown-item" href="#">Contact Us</a></li> -->
+                <li><a class="dropdown-item" href="terms.html">Terms and Conditions</a></li>
+                <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mt-3" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <br><br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Some readable information on cars </h2>
+            <h4 class="card-title">Speak Aloud <button class="btn btn-primary speaker-button"
+                onclick="speakText()">🔊</button></h4>
+            <p class="card-text">
+              The invention of the automobile, or the car, has revolutionized the way we live, work, and travel. Over
+              the past century, cars have evolved from simple, utilitarian vehicles to complex machines that not only
+              provide a means of transportation but also reflect our culture and society.<br>
+
+            <h3>The History of Cars:</h3>
+            <br>
+            The history of cars can be traced back to the late 19th century when a handful of inventors and engineers
+            set out to develop self-propelled vehicles. Karl Benz is often credited with creating the first true
+            automobile in 1886, the Benz Patent-Motorwagen. Since then, the automotive industry has grown exponentially,
+            with countless innovations and breakthroughs.
+            <br>
+            Cars have come a long way in terms of design, technology, and efficiency. Early cars were often
+            steam-powered or ran on internal combustion engines. Today, we have a wide variety of vehicles, from
+            fuel-efficient hybrids to fully electric cars, each with its unique features and capabilities.
+            <br><br>
+            <h3>The Impact of Cars:</h3>
+            <br>
+            <b>Mobility and Convenience:</b> Cars have provided unparalleled mobility and convenience to people
+            worldwide. They have transformed how we commute, allowing us to travel greater distances in shorter
+            timeframes. This has enabled urbanization, as people can live farther from their workplaces.
+            <br><br>
+            <b>Economic Growth:</b> The automotive industry is a significant contributor to the global economy. It
+            encompasses manufacturing, sales, maintenance, and various related sectors, generating employment and
+            economic growth. Car manufacturers are often at the forefront of technological advancements, leading to
+            innovations in other industries.
+            <br><br>
+            <b>Environmental Concerns:</b> Despite their numerous advantages, cars have also contributed to
+            environmental challenges. The widespread use of fossil-fuel-powered vehicles has resulted in air pollution
+            and greenhouse gas emissions. However, there is an ongoing shift towards electric cars and more sustainable
+            transportation options to mitigate these issues.
+            <br><br>
+            <b>Cultural Significance:</b> Cars are more than just machines; they hold cultural significance. They are
+            symbols of personal freedom, status, and identity. The choice of a car can reflect an individual's
+            personality and lifestyle.
+            <br><br>
+            <b>Social and Urban Planning:</b> Cars have influenced urban planning and infrastructure. Cities have
+            expanded road networks, and suburbs have developed around the idea of car-centric living. However, this has
+            also led to issues such as traffic congestion and urban sprawl.
+            <br><br><br>
+            <h3><b>The Future of Cars:</b></h3>
+            <br>
+            The future of cars holds exciting possibilities. The industry is undergoing a transformation towards
+            electric vehicles (EVs) and autonomous driving. EVs promise to reduce the environmental impact of cars by
+            eliminating tailpipe emissions. Autonomous driving technology, when fully realized, has the potential to
+            improve road safety and change the way we think about transportation.
+            <br>
+            Additionally, car-sharing services and a greater emphasis on public transportation aim to reduce the number
+            of privately owned vehicles, further reducing traffic and environmental concerns.
+            <br><br>
+            <h3>Conclusion:</h3>
+            <br>
+            Cars have come a long way from their humble beginnings as a means of transportation. They have left an
+            indelible mark on our society, influencing not only how we get from one place to another but also shaping
+            our culture, economy, and environment. As we stand on the brink of a new era in the automotive industry,
+            it's clear that cars will continue to be a driving force in our world, with the potential to shape our
+            future in remarkable ways. The challenge is to harness the benefits of cars while mitigating their negative
+            impacts on the environment and society.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="bg-dark text-light p-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>About Us</h4>
+          <p>"Carpursuit is your ultimate destination for the world of automotive excellence. As a leading car
+            manufacturing website, we are committed to delivering a comprehensive and immersive experience for all car
+            enthusiasts. Whether you're a passionate car aficionado, a potential buyer, or someone seeking the latest
+            automotive innovations, Carpursuit has you covered.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>Connect with Us</h4>
+          <ul class="list-unstyled">
+            <li><a href="https://www.facebook.com/profile.php?id=100090940032956" class="text-light"
+                target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com/ahadabdul9976" target="_blank" class="text-light">Twitter</a></li>
+            <li><a href="https://www.instagram.com/__abdulahad._/" target="_blank" class="text-light">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/in/abdul-ahad-6954b0266/" target="_blank"
+                class="text-light">LinkedIn</a></li>
+            <li><a href="https://abdulahad0007.github.io/carpursuit.com/" class="text-light" target="_blank">Github</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Location</h4>
+          <div id="map" style="height: 150px;">
+            <div class="mapouter">
+              <div class="gmap_canvas"><iframe width="300" height="186" id="gmap_canvas"
+                  src="https://maps.google.com/maps?q=rafikabad+colony+dasna+gha&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                  frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                  href="https://online.stopwatch-timer.net/">timer stopwatch</a><br><a
+                  href="https://www.tabclocktab.com/"></a><br>
+                <style>
+                  .mapouter {
+                    position: relative;
+                    text-align: right;
+                    height: 186px;
+                    width: 300px;
+                  }
+                </style><a href="https://www.ongooglemaps.com">insert google map html</a>
+                <style>
+                  .gmap_canvas {
+                    overflow: hidden;
+                    background: none !important;
+                    height: 186px;
+                    width: 300px;
+                  }
+                </style>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <footer class="bg-dark text-light text-center py-3">
+    &copy; 2023 Car Pursuit | All rights Reserved
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    function speakText() {
+      const text = document.querySelector('.card-text').textContent;
+      const speech = new SpeechSynthesisUtterance(text);
+      speechSynthesis.speak(speech);
+    }
+  </script>
+</body>
+
+</html>
